@@ -6,8 +6,9 @@ import std/[ os,strutils ]
 #_______________________________________
 # @section Configuration options
 #___________________
-const rootDir = os.parentDir( currentSourcePath() )
-const binDir  = rootDir/"bin"
+const thisDir = os.parentDir( currentSourcePath() )
+const rootDir = thisDir/"src"/"hugo"
+const binDir  = thisDir/"bin"
 const hugoDir = binDir/"hugogit"
 const hugoBin = binDir/"hugo"
 const bunZip  = binDir/"bun.zip"
