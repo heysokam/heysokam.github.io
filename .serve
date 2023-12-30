@@ -1,0 +1,4 @@
+#!/bin/sh
+cd ./src/hugo
+../../bin/hugo server
+cd ../../

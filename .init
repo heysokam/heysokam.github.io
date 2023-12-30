@@ -1,0 +1,7 @@
+#!/bin/bash
+set -u # error on undefined variables
+set -e # exit on first error
+file="init"
+clear
+./bin/nim c --hints:off --outDir:bin ./src/$file.nim
+./bin/$file
