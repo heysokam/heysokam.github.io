@@ -1,2 +1,4 @@
 #!/bin/sh
+set -u # error on undefined variables
+set -e # exit on first error
 git push origin :public && git subtree push --prefix public origin public

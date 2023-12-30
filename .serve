@@ -1,4 +1,6 @@
 #!/bin/sh
+set -u # error on undefined variables
+set -e # exit on first error
 cd ./src/hugo
 ../../bin/hugo server
 cd ../../
