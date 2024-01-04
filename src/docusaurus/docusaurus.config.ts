@@ -2,11 +2,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const user     :string= 'heysokam'
 const realName :string= 'Ivan Mar'
 const tag      :string= 'Game & Engine Dev'
-const me       :string= 'heysokam'
-const gh       :string= '.github.io'
-const domain   :string= `${me}${gh}`
+const ghio     :string= '.github.io'
+const domain   :string= `${user}${ghio}`
 
 const config: Config = {
   title: realName,
@@ -20,8 +20,8 @@ const config: Config = {
   baseUrl: '/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: me, // Usually your GitHub org/user name.
+  // You don't need these if you aren't using GitHub pages.
+  organizationName: user, // Usually your GitHub org/user name.
   projectName: domain, // Usually your repo name.
 
   onBrokenLinks: 'throw',
