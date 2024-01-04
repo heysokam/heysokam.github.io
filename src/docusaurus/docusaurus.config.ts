@@ -2,16 +2,19 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const user     :string= 'heysokam'
-const realName :string= 'Ivan Mar'
-const tag      :string= 'Game & Engine Dev'
-const ghio     :string= '.github.io'
-const domain   :string= `${user}${ghio}`
+const user        :string= 'heysokam'
+const realName    :string= 'Ivan Mar'
+const tag         :string= 'Game & Engine Dev'
+const ghio        :string= '.github.io'
+const domain      :string= `${user}${ghio}`
+const favicon     :string= 'img/favicon.ico'
+const socialCard  :string= 'img/docusaurus-social-card.jpg'
+const logo        :string= 'img/logo.svg'
 
 const config: Config = {
   title: realName,
   tagline: tag,
-  favicon: 'img/favicon.ico',
+  favicon: favicon,
 
   // Set the production url of your site here
   url: `https://${domain}`,
@@ -40,6 +43,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
           // editUrl:  // Remove this to remove the "edit this page" links. Please change this to your repo.
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -59,47 +63,35 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: socialCard,
     navbar: {
       title: `${realName} | ${tag}`,
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: `${realName} Logo`,
+        src: logo,
       },
       items: [
-        {type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'right', label: 'Tutorial', },
-        {to: '/blog', label: 'Blog', position: 'right'},
-        {href: 'https://github.com/heysokam', label: 'GitHub', position: 'right', },
+        {label: 'Tutorial', position: 'right', type: 'docSidebar', sidebarId: 'tutorialSidebar', },
+        {label: 'Blog',     position: 'right', to: '/blog', },
+        {label: 'GitHub',   position: 'right', href: 'https://github.com/heysokam', },
       ],
     },
     footer: {
       style: 'light',
-      // links: [
-      //   {
-      //     title: 'Docs',
+      links: [],
+      // [{ title: 'Docs',
       //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
+      //       {label: 'Tutorial', to: '/docs/intro', },
       //     ],
       //   },
-      //   {
-      //     title: 'Community',
+      //   { title: 'Community',
       //     items: [
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
+      //       {label: 'Discord', href: 'https://discordapp.com/invite/docusaurus', },
       //     ],
       //   },
-      //   {
-      //     title: 'More',
+      //   { title: 'More',
       //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '/blog',
-      //       },
+      //       {label: 'Blog', to: '/blog', },
       //     ],
       //   },
       // ],
