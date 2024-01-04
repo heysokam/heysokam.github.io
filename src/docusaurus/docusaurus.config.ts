@@ -109,7 +109,7 @@ const config: Config = {
         'c','cpp','nim','zig','python','gdscript',
         'diff','yaml','bash','powershell',
         'glsl','wgsl',
-        'ts','tsx','js','jsx','http','css',
+        'typescript','tsx','javascript','jsx','http','css',
       ],
     },
   } satisfies Preset.ThemeConfig,
