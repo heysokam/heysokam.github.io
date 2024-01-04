@@ -1,4 +1,5 @@
 baseURL      : 'https://heysokam.github.io/'
 languageCode : 'en-us'
-title        : 'My New Hugo Site'
+title        : 'Ivan Mar | Game and Engine Dev'
+theme        : 'strictmark'
 publishDir   : '../../public/'
