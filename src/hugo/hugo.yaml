@@ -1,4 +1,0 @@
-baseURL      : 'https://heysokam.github.io/'
-languageCode : 'en-us'
-title        : 'My New Hugo Site'
-publishDir   : '../../public/'
