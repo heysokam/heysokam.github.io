@@ -105,6 +105,9 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        'c','cpp','nim','zig','python','gdscript',
+        'diff','yaml','bash','powershell'],
     },
   } satisfies Preset.ThemeConfig,
   plugins: [
