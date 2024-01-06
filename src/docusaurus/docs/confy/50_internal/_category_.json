@@ -1,0 +1,8 @@
+{
+  "label": "Internals",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+    "description": "Developer notes about the choices, design, features and future of Confy"
+  }
+}

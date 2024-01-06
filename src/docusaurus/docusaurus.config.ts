@@ -10,6 +10,7 @@ const domain      :string= `${user}${ghio}`
 const favicon     :string= 'img/favicon.ico'
 const socialCard  :string= 'img/docusaurus-social-card.jpg'
 const logo        :string= 'img/logo.svg'
+const docDir      :string= 'docs'
 
 const config: Config = {
   title: realName,
@@ -43,10 +44,9 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: docDir,
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
-          // editUrl:  // Remove this to remove the "edit this page" links. Please change this to your repo.
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: 
         {
@@ -71,7 +71,8 @@ const config: Config = {
         src: logo,
       },
       items: [
-        {label: 'Tutorial', position: 'right', type: 'docSidebar', sidebarId: 'tutorialSidebar', },
+        {label: 'confy',    position: 'right', to: 'confy', },
+        //{label: 'Tutorial', position: 'right', type: 'docSidebar', sidebarId: 'tutorialSidebar', },
         {label: 'Blog',     position: 'right', to: '/blog', },
         {label: 'GitHub',   position: 'right', href: 'https://github.com/heysokam', },
       ],
@@ -101,6 +102,12 @@ const config: Config = {
       defaultMode: 'dark',
       disableSwitch: true,
       respectPrefersColorScheme: false,
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+        hideable: true
+      }
     },
     prism: {
       theme: prismThemes.github,
