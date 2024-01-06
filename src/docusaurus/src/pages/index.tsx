@@ -19,8 +19,8 @@ function HomepageHeader() {
         <div className="py-10">
           <Link
             className="bg-white rounded-md text-gray-500 px-4 py-2"
-            to="/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/confy/quickstart">
+            Confy Tutorial - 5min ⏱️
           </Link>
         </div>
       </div>
