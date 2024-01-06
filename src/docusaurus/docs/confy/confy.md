@@ -26,7 +26,7 @@ bin.build()                # Order to build
 ```
 
 :::important
-If this is your first time trying Confy:  
+If this is your first time using Confy:  
 Follow the [**Quickstart**](/confy/quickstart) guide to get up and running in just 5min ⏱️  
 :::
 
@@ -38,7 +38,7 @@ Other notable features.
   _You own the control flow of your buildsystem._  
 
 - Inspired by SCons.  
-  _But without Python, a typeless language that quickly falls apart as the app grows._  
+  _But without Python, a typeless language that quickly falls apart as code size grows._  
 
 - Builds with **ZigCC**.  
   _Builtin sanitizing, caching, cross-compilation, musl/glibc/others, etc, etc ..._
