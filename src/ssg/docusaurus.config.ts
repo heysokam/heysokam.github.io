@@ -12,6 +12,7 @@ const favicon     :string= 'img/favicon.ico'
 const socialCard  :string= 'img/docusaurus-social-card.jpg'
 const logo        :string= 'img/logo.svg'
 const docDir      :string= '../docs'
+const blogDir     :string= '../blog'
 const license     :string= 'CC-BY-SA-NC'
 
 const config: Config = {
@@ -51,11 +52,10 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_partials/**'],
         },
-        blog: 
-        {
+        blog: {
+          path: blogDir,
           showReadingTime: true,
-          // editUrl:  // Remove this to remove the "edit this page" links. Please change this to your repo.
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          exclude: ['archive/**']
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -74,9 +74,12 @@ const config: Config = {
         src: logo,
       },
       items: [
-        {label: 'confy',    position: 'right', to: 'confy', },
+        {label: 'ᛟ minc',   position: 'right', to: 'minc', },
+        {label: 'ᚲ confy',  position: 'right', to: 'confy', },
+        // {label: 'ᚱ gpu',    position: 'right', to: 'gpu', },
+        // {label: 'ᚹ vulkan', position: 'right', to: 'vulkan', },
         //{label: 'Tutorial', position: 'right', type: 'docSidebar', sidebarId: 'tutorialSidebar', },
-        {label: 'Blog',     position: 'right', to: '/blog', },
+        //{label: 'Blog',     position: 'right', to: '/blog', },
         {label: 'GitHub',   position: 'right', href: 'https://github.com/heysokam', },
       ],
       hideOnScroll: true,

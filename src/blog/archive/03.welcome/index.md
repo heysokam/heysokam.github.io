@@ -1,7 +1,8 @@
 ---
+date: 2021-08-26
 slug: welcome
 title: Welcome
-authors: [slorber, yangshun]
+authors: sokam
 tags: [facebook, hello, docusaurus]
 ---
 
