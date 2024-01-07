@@ -1,4 +1,5 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import orangecula from './src/themes/orangecula';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -10,7 +11,7 @@ const domain      :string= `${user}${ghio}`
 const favicon     :string= 'img/favicon.ico'
 const socialCard  :string= 'img/docusaurus-social-card.jpg'
 const logo        :string= 'img/logo.svg'
-const docDir      :string= 'docs'
+const docDir      :string= '../docs'
 
 const config: Config = {
   title: realName,
@@ -47,6 +48,7 @@ const config: Config = {
           path: docDir,
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
+          exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_partials/**'],
         },
         blog: 
         {
@@ -112,7 +114,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: orangecula,
       additionalLanguages: [
         'c','cpp','nim','zig','python','gdscript',
         'diff','yaml','bash','powershell',
