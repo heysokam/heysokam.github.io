@@ -76,6 +76,7 @@ const config: Config = {
         {label: 'Blog',     position: 'right', to: '/blog', },
         {label: 'GitHub',   position: 'right', href: 'https://github.com/heysokam', },
       ],
+      hideOnScroll: true,
     },
     footer: {
       style: 'light',

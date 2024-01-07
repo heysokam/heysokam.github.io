@@ -12,7 +12,7 @@ You can expect:
 - Easy **cross-compilation**.  
   _No compiler/buildsystem gymnastics. Cross-compilation is builtin._  
 
-Example build file:
+### Example build file
 ```nim
 import confy
 
@@ -30,7 +30,7 @@ If this is your first time using Confy:
 Follow the [**Quickstart**](/confy/quickstart) guide to get up and running in just 5min ⏱️  
 :::
 
-Other notable features.
+### Other notable features
 - **Sane** project configuration **defaults**.  
   _Fully configurable, but no need to repeat yourself._  
 
