@@ -12,6 +12,7 @@ const favicon     :string= 'img/favicon.ico'
 const socialCard  :string= 'img/docusaurus-social-card.jpg'
 const logo        :string= 'img/logo.svg'
 const docDir      :string= '../docs'
+const license     :string= 'CC-BY-SA-NC'
 
 const config: Config = {
   title: realName,
@@ -99,7 +100,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} Ivan Mar. CC-BY-SA-NC`,
+      copyright: `Copyright © ${new Date().getFullYear()} ${realName}. ${license}`,
     },
     colorMode: {
       defaultMode: 'dark',
