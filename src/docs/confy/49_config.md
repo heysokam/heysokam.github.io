@@ -24,6 +24,10 @@ cfg.prefix       = "confy: "    ## Prefix that will be added at the start of eve
 cfg.tab          = "     : "    ## Tab that will be added at the start of every new line belonging to the same message.
 ```
 ```nim
+# Shell Tools
+cfg.gitBin       = "git"        ## Binary to call for running `git` tasks.
+```
+```nim
 # Folders
 cfg.rootDir      = build/".."          ## Assumes the build.nim file output is stored inside root/bin/, so going back one gets to `REPO/*`
 cfg.srcDir       = rootDir/"src"       ## Root Folder where source code files are searched for first (source code root)
