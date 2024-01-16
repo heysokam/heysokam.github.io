@@ -47,16 +47,19 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
+        docs: {  // Configuration for @docusaurus/plugin-content-docs (false to disable)
           path: docDir,
           routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: './sidebars.ts',
           exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_partials/**'],
         },
-        blog: {
+        blog: {  // Configuration for @docusaurus/plugin-content-blog (false to disable)
           path: blogDir,
           showReadingTime: true,
           exclude: ['archive/**']
+        },
+        pages: {  // Configuration for @docusaurus/plugin-content-pages (false to disable)
+          exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_**/**'],
         },
         theme: {
           customCss: './src/css/custom.css',
