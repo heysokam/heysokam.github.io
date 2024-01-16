@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import orangecula from './src/themes/orangecula';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {docusaurusTailwindCss as tailwind} from './src/plugins/tailwind.ts'
 
 const user        :string= 'heysokam'
 const realName    :string= 'Ivan Mar'
@@ -127,20 +128,7 @@ const config: Config = {
       ],
     },
   } satisfies Preset.ThemeConfig,
-  plugins: [
-    // TailwindCSS processor plugin
-    async function myPlugin(context, options) {
-      return {
-        name: "docusaurus-tailwindcss",
-        configurePostCss(postcssOptions) {
-          // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
-          return postcssOptions;
-        },
-      };
-    },
-  ],
+  plugins: [tailwind],
 };
 
 export default config;
